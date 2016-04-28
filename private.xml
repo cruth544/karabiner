@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<root>
+  <modifierdef>MY_HYPER</modifierdef>
+	<appdef>
+		<appname>Dota 2</appname>
+		<equal>com.dota2</equal>
+	</appdef>
+  <appdef>
+    <appname>StarCraft</appname>
+    <equal>com.blizzard.starcraft2</equal>
+  </appdef>
+  <appdef>
+    <appname>HotS</appname>
+    <equal>com.blizzard.heroesofthestorm</equal>
+  </appdef>
+  <appdef>
+    <appname>Chrome</appname>
+    <equal>com.google.Chrome</equal>
+  </appdef>
+  <appdef>
+    <appname>Sublime</appname>
+    <equal>com.sublimetext.3</equal>
+  </appdef>
+  <appdef>
+    <appname>Terminal</appname>
+    <equal>com.apple.Terminal</equal>
+  </appdef>
+  <item>
+    <name>DOTA 2</name>
+    <identifier>private.swap_cmd_to_alt_dota2</identifier>
+    <only>Dota 2</only>
+    <autogen>__KeyToKey__
+      KeyCode::COMMAND_L,
+      KeyCode::OPTION_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::TAB, ModifierFlag::OPTION_L,
+      KeyCode::TAB, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::TAB, ModifierFlag::OPTION_R,
+      KeyCode::TAB, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::Q, ModifierFlag::CONTROL_L,
+      KeyCode::Q, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::D, ModifierFlag::CONTROL_L,
+      KeyCode::D, ModifierFlag::CONTROL_L
+    </autogen>
+    <autogen>__KeyToKey__ KeyCode::F1, KeyCode::F1</autogen>
+    <autogen>__KeyToKey__ KeyCode::F2, KeyCode::F2</autogen>
+    <autogen>__KeyToKey__ KeyCode::F3, KeyCode::F3</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, KeyCode::F5</autogen>
+    <autogen>__KeyToKey__ KeyCode::F9, KeyCode::F9</autogen>
+  </item>
+
+  <item>
+    <name>StarCraft 2</name>
+    <only>StarCraft</only>
+    <identifier>private.SC2</identifier>
+    <autogen>__KeyToKey__ KeyCode::F1, KeyCode::F1</autogen>
+    <autogen>__KeyToKey__ KeyCode::F2, KeyCode::F2</autogen>
+    <autogen>__KeyToKey__
+      KeyCode::F10,
+      KeyCode::F10</autogen>
+    <autogen>__KeyToKey__
+      KeyCode::COMMAND_L,
+      KeyCode::OPTION_L</autogen>
+    <autogen>__KeyToKey__
+      KeyCode::TAB, ModifierFlag::OPTION_L,
+      KeyCode::TAB, ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+  <item>
+    <name>Heroes of the Storm</name>
+    <only>HotS</only>
+    <identifier>private.HotS</identifier>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+    <autogen>__KeyToKey__
+      KeyCode::TAB, ModifierFlag::OPTION_L,
+      KeyCode::TAB, ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>__KeyToKey__
+      KeyCode::Q, ModifierFlag::OPTION_L,
+      KeyCode::Q, ModifierFlag::COMMAND_L
+    </autogen>  </item>
+
+
+
+<!-- External Keyboard Shortcuts -->
+  <item>
+    <name>F5-F12</name>
+    <identifier>private.mediaKeys</identifier>
+    <autogen>--KeyToConsumer-- KeyCode::F5, KeyCode::R, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F6, KeyCode::L, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F7, ConsumerKeyCode::MUSIC_PREV</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F8, ConsumerKeyCode::MUSIC_NEXT</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F9, ConsumerKeyCode::MUSIC_PLAY</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F10, ConsumerKeyCode::VOLUME_MUTE</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F11, ConsumerKeyCode::VOLUME_DOWN</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F12, ConsumerKeyCode::VOLUME_UP</autogen>
+  </item>
+
+  <item>
+    <name>Cursor Navigation</name>
+    <identifier>private.cursorNavigation</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::CONTROL_R,
+      KeyCode::OPTION_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::HOME,
+      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::END,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::PC_APPLICATION,
+      KeyCode::CONTROL_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_UP, ModifierFlag::OPTION_R,
+      KeyCode::PAGEUP</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_DOWN, ModifierFlag::OPTION_R,
+      KeyCode::PAGEDOWN</autogen>
+  </item>
+
+  <!-- <item>
+    <name>Game Caps Lock</name>
+    <only>Dota 2, StarCraft, HotS</only>
+
+    <identifier>private.gameCapsLock</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::F19,
+      KeyCode::CAPSLOCK</autogen>
+  </item> -->
+
+  <item>
+    <name>Caps Lock</name>
+    <not>Sublime, Terminal</not>
+    <identifier>private.capsLock</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::F19,
+      KeyCode::VK_MODIFIER_MY_HYPER,
+      KeyCode::CAPSLOCK</autogen>
+  </item>
+
+  <item>
+    <name>CapsLock = ESC</name>
+    <identifier>private.capsToEsc</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::F19, ModifierFlag::OPTION_L,
+      KeyCode::CAPSLOCK</autogen>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::F19,
+      KeyCode::VK_MODIFIER_MY_HYPER,
+      KeyCode::ESCAPE</autogen>
+  </item>
+
+  <item>
+    <name>Vim like Navigation</name>
+    <not>Terminal, Dota 2, StarCraft, HotS</not>
+    <appendix>CAPS = ESC | SHIFT + CAPS = CAPS</appendix>
+    <appendix>SHIFT + CAPS = CAPS LOCK</appendix>
+    <appendix>CAPS + H,J,K,L = ←,↑,↓,→</appendix>
+    <identifier>private.vimNavigation</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_LEFT</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::J, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_DOWN</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::K, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_UP</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_RIGHT</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::E, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::B, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::4, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::6, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::DELETE, ModifierFlag::MY_HYPER,
+      KeyCode::DELETE, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::D, ModifierFlag::MY_HYPER,
+      KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::S, ModifierFlag::MY_HYPER,
+      KeyCode::DELETE</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::MY_HYPER,
+      KeyCode::DELETE, ModifierFlag::FN</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SLASH, ModifierFlag::MY_HYPER,
+      KeyCode::SLASH, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::MY_HYPER,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::MY_HYPER,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::J,
+      ModifierFlag::MY_HYPER, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_UP,
+      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::K,
+      ModifierFlag::MY_HYPER, ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_DOWN,
+      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+  </item>
+
+  <item>
+    <name>F1/F2 Brightness</name>
+    <not>Dota 2</not>
+    <identifier>private.brightness</identifier>
+    <autogen>--KeyToConsumer-- KeyCode::F1, ConsumerKeyCode::BRIGHTNESS_DOWN</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::F2, ConsumerKeyCode::BRIGHTNESS_UP</autogen>
+  </item>
+
+<!-- Windows Shortcuts -->
+  <item>
+    <name>Specific CTRL for CMD (E, F, G, R, [, ])</name>
+    <not>Terminal</not>
+    <identifier>private.ReloadAdressBar</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::E, ModifierFlag::CONTROL_L,
+      KeyCode::E, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::CONTROL_L,
+      KeyCode::F, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::G, ModifierFlag::CONTROL_L,
+      KeyCode::G, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::P, ModifierFlag::CONTROL_L,
+      KeyCode::P, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::R, ModifierFlag::CONTROL_L,
+      KeyCode::R, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SLASH, ModifierFlag::CONTROL_L | ModifierFlag::CONTROL_R,
+      KeyCode::SLASH, ModifierFlag::COMMAND_R</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R
+    </autogen>
+  </item>
+
+  <item>
+    <name>Pause/Break for Power Button</name>
+    <identifier>private.pauseBreakForPowerButton</identifier>
+    <autogen>--KeyToConsumer-- KeyCode::PC_PAUSE, ConsumerKeyCode::POWER</autogen>
+  </item>
+</root>
