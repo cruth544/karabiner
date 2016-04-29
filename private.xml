@@ -187,10 +187,10 @@
       KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L</autogen>
     <autogen>--KeyToKey--
       KeyCode::4, ModifierFlag::MY_HYPER,
-      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
     <autogen>--KeyToKey--
       KeyCode::6, ModifierFlag::MY_HYPER,
-      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
     <autogen>--KeyToKey--
       KeyCode::DELETE, ModifierFlag::MY_HYPER,
       KeyCode::DELETE, ModifierFlag::COMMAND_R</autogen>
