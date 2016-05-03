@@ -198,10 +198,10 @@
       KeyCode::D, ModifierFlag::MY_HYPER,
       KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
     <autogen>--KeyToKey--
-      KeyCode::S, ModifierFlag::MY_HYPER,
+      KeyCode::F, ModifierFlag::MY_HYPER,
       KeyCode::DELETE</autogen>
     <autogen>--KeyToKey--
-      KeyCode::F, ModifierFlag::MY_HYPER,
+      KeyCode::G, ModifierFlag::MY_HYPER,
       KeyCode::DELETE, ModifierFlag::FN</autogen>
     <autogen>--KeyToKey--
       KeyCode::SLASH, ModifierFlag::MY_HYPER,
