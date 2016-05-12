@@ -148,8 +148,9 @@
   </item>
 
   <item>
-    <name>CapsLock = ESC</name>
-    <identifier>private.capsToEsc</identifier>
+    <name>CapsLock = ESC/MY_HYPER</name>
+    <only>Sublime</only>
+    <identifier>private.capsToEscOrMyHyper</identifier>
     <autogen>--KeyToKey--
       KeyCode::F19, ModifierFlag::OPTION_L,
       KeyCode::CAPSLOCK</autogen>
@@ -157,6 +158,14 @@
       --KeyOverlaidModifier--
       KeyCode::F19,
       KeyCode::VK_MODIFIER_MY_HYPER,
+      KeyCode::ESCAPE</autogen>
+  </item>
+  <item>
+    <name>CapsLock = ESC</name>
+    <only>Terminal</only>
+    <identifier>private.capsToEsc</identifier>
+    <autogen>--KeyToKey--
+      KeyCode::F19,
       KeyCode::ESCAPE</autogen>
   </item>
 
