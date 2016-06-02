@@ -225,9 +225,19 @@
   </item>
 
   <item>
+    <name>Sublime Specific</name>
+    <only>Sublime</only>
+    <appendix>HYPER + M</appendix>
+    <identifier>private.sublimeSpecific</indentifier>
+    <autogen>--KeyToKey--
+      KeyCode::M, ModifierFlag::MY_HYPER,
+      KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
+  </item>
+
+  <item>
     <name>Power Cursors for Sublime</name>
     <only>Sublime</only>
-    <appendix>HYPER + -,i,v</appendix>
+    <appendix>HYPER + -,I,V</appendix>
     <identifier>private.powerCursors</identifier>
     <autogen>--KeyToKey--
       KeyCode::I, ModifierFlag::MY_HYPER,
