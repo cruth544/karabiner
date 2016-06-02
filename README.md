@@ -8,7 +8,4 @@ Required programs:
     <li>
       <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>
     </li>
-    <li>
-      <a href="https://pqrs.org/osx/karabiner/noejectdelay.html.en">NoEjectDelay</a>
-    </li>
   </ul>
