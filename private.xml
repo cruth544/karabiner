@@ -177,6 +177,16 @@
     <appendix>CAPS + H,J,K,L = ←,↑,↓,→</appendix>
     <identifier>private.vimNavigation</identifier>
     <autogen>--KeyToKey--
+      KeyCode::K,
+      ModifierFlag::COMMAND_L, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_UP,
+      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::J,
+      ModifierFlag::COMMAND_L, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_DOWN,
+      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+    <autogen>--KeyToKey--
       KeyCode::H, ModifierFlag::MY_HYPER,
       KeyCode::CURSOR_LEFT</autogen>
     <autogen>--KeyToKey--
@@ -201,9 +211,6 @@
       KeyCode::6, ModifierFlag::MY_HYPER,
       KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
     <autogen>--KeyToKey--
-      KeyCode::DELETE, ModifierFlag::MY_HYPER,
-      KeyCode::DELETE, ModifierFlag::COMMAND_R</autogen>
-    <autogen>--KeyToKey--
       KeyCode::D, ModifierFlag::MY_HYPER,
       KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
     <autogen>--KeyToKey--
@@ -215,22 +222,22 @@
     <autogen>--KeyToKey--
       KeyCode::SLASH, ModifierFlag::MY_HYPER,
       KeyCode::SLASH, ModifierFlag::COMMAND_R</autogen>
+  </item>
+
+  <item>
+    <name>Power Cursors for Sublime</name>
+    <only>Sublime</only>
+    <appendix>HYPER + -,i,v</appendix>
+    <identifier>private.powerCursors</identifier>
     <autogen>--KeyToKey--
-      KeyCode::BRACKET_LEFT, ModifierFlag::MY_HYPER,
-      KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L</autogen>
+      KeyCode::I, ModifierFlag::MY_HYPER,
+      KeyCode::EQUAL, ModifierFlag::CONTROL_L</autogen>
     <autogen>--KeyToKey--
-      KeyCode::BRACKET_RIGHT, ModifierFlag::MY_HYPER,
-      KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      KeyCode::MINUS, ModifierFlag::MY_HYPER,
+      KeyCode::MINUS, ModifierFlag::CONTROL_L</autogen>
     <autogen>--KeyToKey--
-      KeyCode::J,
-      ModifierFlag::MY_HYPER, ModifierFlag::COMMAND_L,
-      KeyCode::CURSOR_UP,
-      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
-    <autogen>--KeyToKey--
-      KeyCode::K,
-      ModifierFlag::MY_HYPER, ModifierFlag::COMMAND_L,
-      KeyCode::CURSOR_DOWN,
-      ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+      KeyCode::V, ModifierFlag::MY_HYPER,
+      KeyCode::A, ModifierFlag::CONTROL_R</autogen>
   </item>
 
   <item>
@@ -243,20 +250,70 @@
 
 <!-- Windows Shortcuts -->
   <item>
-    <name>Specific CTRL for CMD (E, F, G, R, [, ])</name>
+    <name>CTRL For File/Text</name>
+    <not>Terminal</not>
+    <identifier>private.ctrlFileText</identifier>
+    <appendix>CTRL + A, S, C, X, V, Z, DELETE</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::C, ModifierFlag::CONTROL_L,
+      KeyCode::C, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::V, ModifierFlag::CONTROL_L,
+      KeyCode::V, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::X, ModifierFlag::CONTROL_L,
+      KeyCode::X, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::A, ModifierFlag::CONTROL_L,
+      KeyCode::A, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::S, ModifierFlag::CONTROL_L,
+      KeyCode::S, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::Z, ModifierFlag::CONTROL_L,
+      KeyCode::Z, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::DELETE, ModifierFlag::CONTROL_L,
+      KeyCode::DELETE, ModifierFlag::OPTION_R
+    </autogen>
+  </item>
+
+  <item>
+    <name>CTRL For Browser/Window</name>
+    <not>Terminal</not>
+    <identifier>private.ctrlBrowserWindow</identifier>
+    <appendix>CTRL + W, T, N, O</appendix>
+    <autogen>--KeyToKey--
+      KeyCode::W, ModifierFlag::CONTROL_L,
+      KeyCode::W, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::T, ModifierFlag::CONTROL_L,
+      KeyCode::T, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::N, ModifierFlag::CONTROL_L,
+      KeyCode::N, ModifierFlag::COMMAND_R
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::O, ModifierFlag::CONTROL_L,
+      KeyCode::O, ModifierFlag::COMMAND_R
+    </autogen>
+  </item>
+
+  <item>
+    <name>Specific CTRL for CMD (F, P, R, /, [, ])</name>
     <not>Terminal</not>
     <identifier>private.ReloadAdressBar</identifier>
     <autogen>--KeyToKey--
-      KeyCode::E, ModifierFlag::CONTROL_L,
-      KeyCode::E, ModifierFlag::COMMAND_R
-    </autogen>
-    <autogen>--KeyToKey--
       KeyCode::F, ModifierFlag::CONTROL_L,
       KeyCode::F, ModifierFlag::COMMAND_R
-    </autogen>
-    <autogen>--KeyToKey--
-      KeyCode::G, ModifierFlag::CONTROL_L,
-      KeyCode::G, ModifierFlag::COMMAND_R
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::P, ModifierFlag::CONTROL_L,
@@ -269,19 +326,31 @@
     <autogen>--KeyToKey--
       KeyCode::SLASH, ModifierFlag::CONTROL_L | ModifierFlag::CONTROL_R,
       KeyCode::SLASH, ModifierFlag::COMMAND_R</autogen>
-    <autogen>--KeyToKey--
+<!--     <autogen>--KeyToKey--
       KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
       KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::BRACKET_RIGHT, ModifierFlag::CONTROL_L,
       KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R
-    </autogen>
+    </autogen> -->
   </item>
 
   <item>
     <name>Pause/Break for Power Button</name>
     <identifier>private.pauseBreakForPowerButton</identifier>
-    <autogen>--KeyToConsumer-- KeyCode::PC_PAUSE, ConsumerKeyCode::POWER</autogen>
+    <autogen>--KeyToConsumer--
+      KeyCode::PC_PAUSE,
+      ConsumerKeyCode::POWER</autogen>
   </item>
+
+  <item>
+    <name>Power Button For Sleep</name>
+    <identifier>private.powerButtonToSleep</identifier>
+    <appendix>Only needed on older Macs with Eject Key</appendix>
+    <autogen>--KeyToConsumer--
+      ConsumerKeyCode::EJECT,
+      ConsumerKeyCode::EJECT, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
+  </item>
+
 </root>
