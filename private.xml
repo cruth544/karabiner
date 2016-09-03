@@ -22,6 +22,10 @@
     <equal>com.sublimetext.3</equal>
   </appdef>
   <appdef>
+    <appname>IntelliJ</appname>
+    <equal>com.jetbrains.intellij</equal>
+  </appdef>
+  <appdef>
     <appname>Terminal</appname>
     <equal>com.apple.Terminal</equal>
   </appdef>
@@ -138,7 +142,7 @@
 
   <item>
     <name>Caps Lock</name>
-    <not>Sublime, Terminal</not>
+    <not>Sublime, Terminal, IntelliJ</not>
     <identifier>private.capsLock</identifier>
     <autogen>
       --KeyOverlaidModifier--
@@ -149,7 +153,8 @@
 
   <item>
     <name>CapsLock = ESC/MY_HYPER</name>
-    <only>Sublime</only>
+    <only>Sublime, IntelliJ</only>
+    <appendix>SHIFT + CAPS = CAPS LOCK</appendix>
     <identifier>private.capsToEscOrMyHyper</identifier>
     <autogen>--KeyToKey--
       KeyCode::F19, ModifierFlag::OPTION_L,
@@ -163,17 +168,20 @@
   <item>
     <name>CapsLock = ESC</name>
     <only>Terminal</only>
+    <appendix>SHIFT + CAPS = CAPS LOCK</appendix>
     <identifier>private.capsToEsc</identifier>
     <autogen>--KeyToKey--
       KeyCode::F19,
       KeyCode::ESCAPE</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::ESCAPE, ModifierFlag::OPTION_L,
+      KeyCode::CAPSLOCK</autogen>
   </item>
 
   <item>
     <name>Vim like Navigation</name>
     <not>Terminal, Dota 2, StarCraft, HotS</not>
     <appendix>CAPS = ESC | SHIFT + CAPS = CAPS</appendix>
-    <appendix>SHIFT + CAPS = CAPS LOCK</appendix>
     <appendix>CAPS + H,J,K,L = ←,↑,↓,→</appendix>
     <identifier>private.vimNavigation</identifier>
     <autogen>--KeyToKey--
@@ -186,6 +194,14 @@
       ModifierFlag::COMMAND_L, ModifierFlag::MY_HYPER,
       KeyCode::CURSOR_DOWN,
       ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::F,
+      ModifierFlag::COMMAND_L, ModifierFlag::MY_HYPER,
+      KeyCode::PAGEDOWN</autogen>
+    <autogen>--KeyToKey--
+      KeyCode::B,
+      ModifierFlag::COMMAND_L, ModifierFlag::MY_HYPER,
+      KeyCode::PAGEUP</autogen>
     <autogen>--KeyToKey--
       KeyCode::H, ModifierFlag::MY_HYPER,
       KeyCode::CURSOR_LEFT</autogen>
@@ -233,7 +249,6 @@
       KeyCode::M, ModifierFlag::MY_HYPER,
       KeyCode::M, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
   </item>
-
   <item>
     <name>Power Cursors for Sublime</name>
     <only>Sublime</only>
@@ -248,6 +263,16 @@
     <autogen>--KeyToKey--
       KeyCode::V, ModifierFlag::MY_HYPER,
       KeyCode::A, ModifierFlag::CONTROL_R</autogen>
+  </item>
+
+  <item>
+    <name>IntelliJ Specific</name>
+    <only>IntelliJ</only>
+    <appendix>HYPER + I</appendix>
+    <identifier>private.intellijSpecific</indentifier>
+    <autogen>--KeyToKey--
+      KeyCode::I, ModifierFlag::MY_HYPER,
+      KeyCode::I, ModifierFlag::CONTROL_L</autogen>
   </item>
 
   <item>
