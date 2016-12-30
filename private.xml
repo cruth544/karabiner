@@ -388,4 +388,184 @@
       ConsumerKeyCode::EJECT, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L</autogen>
   </item>
 
+  <!-- Happy Hacking Keyboard Pro2 -->
+  <item>
+    <name>HHKB Pro2</name>
+    <identifier>private.HHKB</identifier>
+    <appendix>Emulate HHKB Pro2 layout</appendix>
+    <!-- Fn Key -->
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_UP,
+      KeyCode::VK_MODIFIER_MY_HYPER
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_DOWN,
+      KeyCode::VK_MODIFIER_MY_HYPER
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_LEFT,
+      KeyCode::VK_MODIFIER_MY_HYPER
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CURSOR_RIGHT,
+      KeyCode::VK_MODIFIER_MY_HYPER
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::PC_APPLICATION,
+      KeyCode::VK_MODIFIER_MY_HYPER
+    </autogen>
+
+    <!-- Top Row -->
+    <autogen>--KeyToKey--
+      KeyCode::BACKQUOTE,
+      KeyCode::ESCAPE
+    </autogen>
+    <!-- Fn -->
+      <autogen>--KeyToKey--
+        KeyCode::1, ModifierFlag::MY_HYPER,
+        KeyCode::F1
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::2, ModifierFlag::MY_HYPER,
+        KeyCode::F2
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::3, ModifierFlag::MY_HYPER,
+        KeyCode::F3
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::4, ModifierFlag::MY_HYPER,
+        KeyCode::F4
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::5, ModifierFlag::MY_HYPER,
+        KeyCode::F5
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::6, ModifierFlag::MY_HYPER,
+        KeyCode::F6
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::7, ModifierFlag::MY_HYPER,
+        KeyCode::F7
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::8, ModifierFlag::MY_HYPER,
+        KeyCode::F8
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::9, ModifierFlag::MY_HYPER,
+        KeyCode::F9
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::0, ModifierFlag::MY_HYPER,
+        KeyCode::F10
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::MINUS, ModifierFlag::MY_HYPER,
+        KeyCode::F11
+      </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::EQUAL, ModifierFlag::MY_HYPER,
+        KeyCode::F12
+      </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::DELETE,
+      KeyCode::BACKSLASH
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::DELETE, ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R,
+      KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+    </autogen>
+      <autogen>--KeyToKey--
+        KeyCode::DELETE, ModifierFlag::MY_HYPER,
+        KeyCode::FORWARD_DELETE
+      </autogen>
+      <!-- Can't do ~ and Del -->
+      <!-- <autogen>--KeyToKey-- -->
+        <!-- KeyCode::BACKQUOTE, -->
+        <!-- KeyCode::ESCAPE -->
+      <!-- </autogen> -->
+
+    <!-- Second Row -->
+    <autogen>--KeyToKey--
+      KeyCode::TAB, ModifierFlag::MY_HYPER,
+      KeyCode::CAPSLOCK
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BRACKET_LEFT, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_UP
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BACKSLASH,
+      KeyCode::DELETE
+    </autogen>
+
+    <!-- Third Row -->
+    <autogen>--KeyToConsumer--
+      KeyCode::A, ModifierFlag::MY_HYPER,
+      ConsumerKeyCode::VOLUME_UP
+    </autogen>
+    <autogen>--KeyToConsumer--
+      KeyCode::S, ModifierFlag::MY_HYPER,
+      ConsumerKeyCode::VOLUME_DOWN
+    </autogen>
+    <autogen>--KeyToConsumer--
+      KeyCode::D, ModifierFlag::MY_HYPER,
+      ConsumerKeyCode::VOLUME_MUTE
+    </autogen>
+    <!-- No Eject Button -->
+    <!-- <autogen>--KeyToKey--
+      KeyCode::F, ModifierFlag::MY_HYPER,
+      KeyCode::EJECT
+    </autogen> -->
+    <autogen>--KeyToKey--
+      KeyCode::H, ModifierFlag::MY_HYPER,
+      KeyCode::KEYPAD_MULTIPLY
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::J, ModifierFlag::MY_HYPER,
+      KeyCode::KEYPAD_SLASH
+    </autogen>
+
+    <autogen>--KeyToKey--
+      KeyCode::K, ModifierFlag::MY_HYPER,
+      KeyCode::HOME
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::L, ModifierFlag::MY_HYPER,
+      KeyCode::PAGEUP
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SEMICOLON, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::QUOTE, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+
+    <!-- Fourth Row -->
+    <autogen>--KeyToKey--
+      KeyCode::N, ModifierFlag::MY_HYPER,
+      KeyCode::KEYPAD_EQUAL
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::M, ModifierFlag::MY_HYPER,
+      KeyCode::KEYPAD_MINUS
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::COMMA, ModifierFlag::MY_HYPER,
+      KeyCode::END
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::DOT, ModifierFlag::MY_HYPER,
+      KeyCode::PAGEDOWN
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::SLASH, ModifierFlag::MY_HYPER,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+  </item>
+
 </root>
