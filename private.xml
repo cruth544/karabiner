@@ -502,6 +502,10 @@
     </autogen>
 
     <!-- Third Row -->
+    <autogen>--KeyToKey--
+      KeyCode::F19,
+      KeyCode::CONTROL_L
+    </autogen>
     <autogen>--KeyToConsumer--
       KeyCode::A, ModifierFlag::MY_HYPER,
       ConsumerKeyCode::VOLUME_UP
@@ -528,9 +532,9 @@
       KeyCode::KEYPAD_SLASH
     </autogen>
 
-    <autogen>--KeyToKey--
+    <autogen>--KeyToKey-- <!-- Home -->
       KeyCode::K, ModifierFlag::MY_HYPER,
-      KeyCode::HOME
+      KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::L, ModifierFlag::MY_HYPER,
@@ -554,9 +558,9 @@
       KeyCode::M, ModifierFlag::MY_HYPER,
       KeyCode::KEYPAD_MINUS
     </autogen>
-    <autogen>--KeyToKey--
+    <autogen>--KeyToKey-- <!-- End -->
       KeyCode::COMMA, ModifierFlag::MY_HYPER,
-      KeyCode::END
+      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
     </autogen>
     <autogen>--KeyToKey--
       KeyCode::DOT, ModifierFlag::MY_HYPER,
@@ -565,6 +569,20 @@
     <autogen>--KeyToKey--
       KeyCode::SLASH, ModifierFlag::MY_HYPER,
       KeyCode::CURSOR_DOWN
+    </autogen>
+
+    <!-- Turn off -->
+    <autogen>--KeyToKey--
+      KeyCode::CONTROL_L,
+      KeyCode::F18
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::CONTROL_R,
+      KeyCode::F18
+    </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::ESCAPE,
+      KeyCode::F18
     </autogen>
   </item>
 
