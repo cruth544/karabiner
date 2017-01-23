@@ -474,18 +474,10 @@
       KeyCode::BACKSLASH
     </autogen>
     <autogen>--KeyToKey--
-      KeyCode::DELETE, ModifierFlag::SHIFT_L, ModifierFlag::SHIFT_R,
-      KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
+      KeyCode::DELETE, ModifierFlag::MY_HYPER,
+      KeyCode::BACKSLASH, ModifierFlag:: SHIFT_L
     </autogen>
-      <autogen>--KeyToKey--
-        KeyCode::DELETE, ModifierFlag::MY_HYPER,
-        KeyCode::FORWARD_DELETE
-      </autogen>
       <!-- Can't do ~ and Del -->
-      <!-- <autogen>--KeyToKey-- -->
-        <!-- KeyCode::BACKQUOTE, -->
-        <!-- KeyCode::ESCAPE -->
-      <!-- </autogen> -->
 
     <!-- Second Row -->
     <autogen>--KeyToKey--
@@ -500,6 +492,10 @@
       KeyCode::BACKSLASH,
       KeyCode::DELETE
     </autogen>
+    <autogen>--KeyToKey--
+      KeyCode::BACKSLASH, ModifierFlag::MY_HYPER,
+      KeyCode::FORWARD_DELETE
+    </autogen>
 
     <!-- Third Row -->
     <autogen>--KeyToKey--
@@ -508,11 +504,11 @@
     </autogen>
     <autogen>--KeyToConsumer--
       KeyCode::A, ModifierFlag::MY_HYPER,
-      ConsumerKeyCode::VOLUME_UP
+      ConsumerKeyCode::VOLUME_DOWN
     </autogen>
     <autogen>--KeyToConsumer--
       KeyCode::S, ModifierFlag::MY_HYPER,
-      ConsumerKeyCode::VOLUME_DOWN
+      ConsumerKeyCode::VOLUME_UP
     </autogen>
     <autogen>--KeyToConsumer--
       KeyCode::D, ModifierFlag::MY_HYPER,
